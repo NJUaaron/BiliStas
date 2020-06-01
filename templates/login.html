@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <style>
+        body{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="top-banner">
+    <img src="static/image/login-top.png">
+</div>
+<div class="title-line">
+    <span class="tit">登录</span>
+</div>
+<div class="login-box">
+    <div class="input-box">
+        <form method="post">
+            <div class="item username status-box">
+                {{ form.phone }}
+                <div class="text clearfix" style="visibility: hidden;"><p class="tips">请输入注册时的邮箱或手机号呀</p></div>
+            </div>
+            <div class="item password status-box">
+                {{ form.password }}
+                <div class="text clearfix" style="visibility: hidden;"><p class="tips">喵，你没输入密码么？</p></div></div>
+            <div><p class="login-tip">请保护好自己的个人信息</p></div>
+            <div class="btn-box">
+                {{ form.submit }}
+                <!--<a class="btn btn-login">登录</a>-->
+                <a href="register" class="btn btn-reg">注册</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="inset-img-box">
+    <img src="static/image/33.png" style="float: left; height: 100%">
+    <img src="static/image/22.png" style="float:right; height: 100%">
+</div>
+</body>
+</html>
