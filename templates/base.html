@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>WebProject</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/detail.css') }}">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <!--<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/echarts.js') }}"></script>
     <style>
         body{
             padding-top: 50px;
+            background-color: #f6eaee;
         }
     </style>
 </head>
@@ -22,9 +25,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">基本信息</a></li>
-                    <li><a href="#">Up分析</a></li>
-                    <li><a href="#">用户分析</a></li>
+                    {% block navbar %}{% endblock %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -43,6 +44,7 @@
             </div>
         </div>
     </nav>
+    {% block content %}{% endblock %}
     <div class="banner">
         <img src="static/image/banner.png" style="width: 100%">
     </div>
@@ -51,4 +53,5 @@
     </container>
 
 </body>
+{% block script %}{% endblock %}
 </html>

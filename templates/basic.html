@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block navbar %}
+<li class="active"><a>基本信息</a></li>
+<li><a href="fansfluct">涨粉掉粉榜单</a></li>
+<li><a href="activedata">用户活跃趋势</a></li>
+<li><a href="category">分区热度</a></li>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row" style="height: 130px; margin-top: 30px; padding-top: 30px; background-color: #ededfa">
+        <div class="col-xs-4">
+            <div class="text_box" style="text-align: center; right: 0%; position: absolute; width: 200px">
+                <div style="">粉丝数</div>
+                <div style="color: #1e88e5; font-weight: bold; font-size: 2.75rem;">10000000</div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="vs_box" style="display: flex; align-items: center; margin: 0 auto; width: 210px">
+                <div class="avatar" style="height: 60px; min-width: 60px; width: 60px;">
+                    <img src="static/image/test_avatar.jpg">
+                </div>
+                <div class="text_block">
+                    <div style="color: gray; font-weight: bold; font-size: 1.5rem; text-align: center;">榜首粉丝争夺</div>
+                    <div style="color: red; font-weight: bold; font-size: 3.5rem; text-align: center;">vs</div>
+                </div>
+                <div class="avatar" style="height: 60px; min-width: 60px; width: 60px;">
+                <img src="static/image/test_avatar.jpg">
+            </div>
+            </div>
+
+        </div>
+        <div class="col-xs-4" style="text-align: center;">
+            <div class="text_box" style="text-align: center; left: 0%; position: absolute; width: 200px">
+                <div style="">粉丝数</div>
+                <div style="color: #1e88e5; font-weight: bold; font-size: 2.75rem;">10000000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin: 20px 0">
+        <div class="col-xs-4" style="background-color: #dedef8;">
+            <div class="card__title">
+                  <br>
+                  <h4 style="text-align: center;">粉丝数最多的UP主TOP10</h4>
+                  <br>
+                  <div class="card_divider" style="height: 2px; left: 0px; width: 100%; background-color: #1e88e5">
+                  </div>
+            </div>
+            <div class="card__text">
+              <span>
+                  <a href="/author/50329118" class="card_label" style="display: flex; text-decoration: none; color: rgba(0, 0, 0, 0.87); transform-origin: center top 0px;">
+                      <div class="avatar" style="height: 60px; min-width: 60px; width: 60px;">
+                          <img src="static/image/test_avatar.jpg">
+                      </div>
+                      <div class="col">
+                          <div>
+                              <div>老骚豆腐</div>
+                              <div>
+                                  <i aria-hidden="true" class="v-icon notranslate mdi mdi-flash-circle theme--light" style="font-size: 12px; color: rgb(251, 192, 45); caret-color: rgb(251, 192, 45);">
+                                  </i>
+                                  <span class="caption grey--text" style="vertical-align: middle;">
+                                      哔哩哔哩英雄联盟赛事直播官方账号
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-right" style="align-self: center;">
+                          <span class="chip_green">
+                              <span class="chip_content">
+                                       46,851
+                              </span>
+                          </span>
+                      </div>
+                  </a>
+                  <a href="/author/50329118" class="card_label" style="display: flex; text-decoration: none; color: rgba(0, 0, 0, 0.87); transform-origin: center top 0px;">
+                      <div class="avatar" style="height: 60px; min-width: 60px; width: 60px;">
+                          <img src="static/image/test_avatar.jpg">
+                      </div>
+                      <div class="col">
+                          <div>
+                              <div>老骚豆腐</div>
+                              <div>
+                                  <i aria-hidden="true" class="v-icon notranslate mdi mdi-flash-circle theme--light" style="font-size: 12px; color: rgb(251, 192, 45); caret-color: rgb(251, 192, 45);">
+                                  </i>
+                                  <span class="caption grey--text" style="vertical-align: middle;">
+                                      哔哩哔哩英雄联盟赛事直播官方账号
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-right" style="align-self: center;">
+                          <span class="chip_green">
+                              <span class="chip_content">
+                                       46,851
+                              </span>
+                          </span>
+                      </div>
+                  </a>
+              </span>
+          </div>
+        </div>
+    <div class="col-xs-4">
+          <div class="card__title">
+              <br>
+              <h4 style="text-align: center;">播放量最多的视频TOP10</h4>
+              <br>
+              <div class="card_divider" style="height: 2px; left: 0px; width: 100%; background-color: #1e88e5">
+              </div>
+          </div>
+    </div>
+    <div class="col-xs-4" style="background-color: #dedef8;">
+        <div class="card__title">
+              <br>
+              <h4 style="text-align: center;">点赞数最多的视频TOP10</h4>
+              <br>
+              <div class="card_divider" style="height: 2px; left: 0px; width: 100%; background-color: #1e88e5">
+              </div>
+        </div>
+    </div>
+   </div>
+</div>
+
+{% endblock %}
