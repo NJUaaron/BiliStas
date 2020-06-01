@@ -1,0 +1,158 @@
+h1,h3,p,a,button{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.onepage{
+    height: 450px;
+}
+
+.onepage-bg{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+}
+
+.title-text{
+    margin-top: 65px;
+}
+
+.headfontsize h1{
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.headfontsize p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*login.html*/
+.top-banner {
+    background: #00a0d8;
+    height: 86px;
+    text-align: center;
+    /*margin-top: -10px;*/
+}
+
+.title-line {
+    width: 980px;
+    height: 28px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.title-line .tit {
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.login-box {
+    left: 50%;
+    margin-left: -207px;
+    width: 414px;
+    /*text-align: center;*/
+    position: absolute;
+    /*margin-left: -245px;*/
+}
+
+.input-box {
+    margin-top: 50px;
+    width: 414px;
+}
+
+.input-box .item input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.input-box .item input.error {
+    border-color: #f66495;
+}
+
+.input-box .text {
+    margin: 0px 0;
+    font-size: 12px;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.input-box .text .tips {
+    color: #f66495;
+    float: left;
+}
+
+.input-box .btn-box {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.input-box .btn-box .btn {
+    color: #555;
+    display: inline-block;
+    height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 184px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    margin: 0;
+    padding: 0;
+}
+
+.input-box .btn-box .btn-login {
+    border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+}
+
+.input-box .btn-box .btn-reg {
+    border: 1px solid #0381aa;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.input-box .btn-box .btn-register {
+    margin: 0 auto;
+    border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+}
+
+.input-box .login-tip{
+    color: #bbb;
+    font-size: 12px;
+}
+
+.inset-img-box{
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 11%;
+    height: 300px;
+    z-index: revert;
+}
