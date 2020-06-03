@@ -8,7 +8,6 @@
 
 {% block navbar %}
 <li><a href="basic">基本信息</a></li>
-<li><a href="fansfluct">涨粉掉粉榜单</a></li>
 <li><a href="activedata">用户活跃趋势</a></li>
 <li class="active"><a>分区热度</a></li>
 {% endblock %}
@@ -41,8 +40,8 @@
 
         visualMap: {
             show: false,
-            min: 80,
-            max: 600,
+            min: 500000,
+            max: 4000000,
             inRange: {
                 colorLightness: [0, 1]
             }
@@ -54,13 +53,18 @@
                 radius: '55%',
                 center: ['50%', '50%'],
                 data: [
-                    {value: 335, name: '直接访问'},
-                    {value: 310, name: '邮件营销'},
-                    {value: 274, name: '联盟广告'},
-                    {value: 235, name: '视频广告'},
-                    {value: 400, name: '搜索引擎'},
-                    {value: 200, name: '跳舞'},
-                    {value: 450, name: '电竞'}
+                    {value: 2998851, name: '动画'},
+                    {value: 630526, name: '国创相关'},
+                    {value: 1291700, name: '音乐'},
+                    {value: 1631558, name: '舞蹈'},
+                    {value: 1824332, name: '游戏'},
+                    {value: 2255391, name: '科技'},
+                    {value: 927462, name: '数码'},
+                    {value: 3112080, name: '生活'},
+                    {value: 3467175, name: '鬼畜'},
+                    {value: 801023, name: '时尚'},
+                    {value: 1678697, name: '娱乐'},
+                    {value: 1571511, name: '影视'}
                 ].sort(function (a, b) { return a.value - b.value; }),
                 roseType: 'radius',
                 label: {
@@ -77,7 +81,7 @@
                 itemStyle: {
                     color: '#c23531',
                     shadowBlur: 200,
-                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    shadowColor: 'rgba(251, 114, 153, 0.6)'
                 },
 
                 animationType: 'scale',

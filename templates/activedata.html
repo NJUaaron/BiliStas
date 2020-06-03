@@ -2,14 +2,13 @@
 {% extends "base.html" %}
 {% block navbar %}
 <li><a href="basic">基本信息</a></li>
-<li><a  href="fansfluct">涨粉掉粉榜单</a></li>
 <li class="active"><a>用户活跃趋势</a></li>
 <li><a href="category">分区热度</a></li>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <div style="text-align: center; color: #00a0d8; font-weight: bold; font-size: 2.25rem; margin-top: 20px">近30天Bilibili每日活跃用户人数</div>
+    <div style="text-align: center; color: #00a0d8; font-weight: bold; font-size: 2.25rem; margin-top: 20px">前一周Bilibili每日活跃用户人数</div>
     <div id="graph1" style="width: 800px;height:500px;margin: 0 auto;"></div>
     <div style="text-align: center; color: #00a0d8; font-weight: bold; font-size: 2.25rem; margin-top: 40px">近一年Bilibili每月活跃用户人数</div>
     <div id="graph2" style="width: 800px;height:500px;margin: 0 auto;"></div>
@@ -31,7 +30,7 @@
             type: 'value'
         },
         series: [{
-            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            data: [37615423, 40569821, 29185564, 39041234, 50091303, 51020849, 47056989],
             type: 'line',
             areaStyle: {}
         }]
@@ -44,13 +43,13 @@
         xAxis: {
             type: 'category',
             boundaryGap: false,
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            data: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May']
         },
         yAxis: {
             type: 'value'
         },
         series: [{
-            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            data: [132845926, 120429519, 141905679, 132047892, 110164315, 120567915, 129000214, 133043065, 132005269, 129005169, 133014752, 132030153, 93202346],
             type: 'line',
             areaStyle: {}
         }]

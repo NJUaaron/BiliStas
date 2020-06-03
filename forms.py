@@ -7,7 +7,7 @@ from flask_wtf.file import  FileField, FileRequired, FileAllowed
 class LoginForm(FlaskForm):
     phone = StringField('手机号', render_kw={'placeholder': '你的手机号/邮箱'}, validators=[DataRequired(message=u'请输入手机号或邮箱')])
     password = PasswordField('密码', render_kw={'placeholder': '密码'}, validators=[DataRequired(), Length(6, 24)])
-    submit = SubmitField('登陆', render_kw={'class': 'btn btn-login'})
+    submit = SubmitField('登录', render_kw={'class': 'btn btn-login'})
 
 class RegisterForm(FlaskForm):
     phone = StringField('手机号', render_kw={'placeholder': '输入手机号'}, validators=[DataRequired(message=u'请输入手机号')])

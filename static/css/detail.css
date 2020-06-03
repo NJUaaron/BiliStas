@@ -21,6 +21,9 @@ h4 {
 }
 
 .avatar {
+    height: 60px;
+    min-width: 60px;
+    width: 60px;
     -webkit-box-align: center;
     align-items: center;
     border-radius: 50%;
@@ -34,7 +37,30 @@ h4 {
     overflow: hidden;
 }
 
+.video_avatar {
+    height: 60px;
+    min-width: 90px;
+    width: 90px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
 .avatar img{
+    border-radius: inherit;
+    display: inline-flex;
+    height: inherit;
+    width: inherit;
+}
+
+.video_avatar img{
     border-radius: inherit;
     display: inline-flex;
     height: inherit;
